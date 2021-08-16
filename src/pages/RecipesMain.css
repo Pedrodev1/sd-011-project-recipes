@@ -1,0 +1,145 @@
+:root {
+
+  --one: #f8b735;
+
+  --two: #f78e28;
+
+  --three: #2b898b;
+
+  --four: #26704f;
+
+  --five: #213037;
+}
+
+.cards-cont {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.cards-cont a {
+  margin: 0 auto;
+  text-align: center;
+  width: 49%;
+}
+
+.recipe-card {
+  border-radius: 15px 15px 10px 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.recipe-img {
+  width: 25px;
+}
+
+@media screen and ( max-width : 500px ) {
+
+  .cat-cont {
+    align-items: baseline;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 3px;
+    overflow: scroll;
+  }
+
+  .cat-btn {
+    background-color: var(--one);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    margin: 0 0.5%;
+    overflow: visible;
+    transition: 1s;
+    white-space: nowrap;
+  }
+
+  .cat-btn.selected {
+    background-color: var(--two);
+  }
+
+  .cat-btn:focus {
+    outline: none;
+  }
+
+  .car-img-cont {
+    background-color: var(--three);
+    width: 100%;
+  }
+
+  .recipe-img {
+    max-height: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .recipe-card {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cards-cont a:last-child:nth-child( odd ) {
+    flex: 1 1 49%;
+    max-width: 99%;
+  }
+
+  .cards-cont a:last-child:nth-child( odd ) .recipe-card {
+    border-radius: 15px 15px 10px 10px;
+  }
+
+  .recipe-card span, .ing-card span, .fav-card span, .made-card span {
+    background-image: linear-gradient(to bottom, transparent, var(--five));
+    bottom: 0;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: -2px;
+    overflow: hidden;
+    padding: 2em 10px 10px;
+    position: absolute;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .cards-cont {
+    margin-bottom: 55px;
+    margin-top: 5px;
+  }
+
+  .search-cont {
+    background-color: var(--four);
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: -1px 0 0.5em;
+  }
+
+  .search-cont .form-control {
+    margin: 1%;
+    width: 98%;
+  }
+
+  .checks-cont {
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+
+  .search-cont button {
+    background-color: var(--two);
+    border: 0;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: -1px;
+  }
+
+}

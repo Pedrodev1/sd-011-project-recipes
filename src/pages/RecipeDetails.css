@@ -1,0 +1,155 @@
+.dtl-img {
+  width: 75px;
+}
+
+.btn-start-recp {
+  bottom: 0;
+  position: fixed;
+}
+
+.btn-container {
+  margin: 0 auto;
+}
+
+.carousel {
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 1em auto 2.75em;
+  overflow: auto;
+  padding: 1% 0;
+  width: 100%;
+}
+
+.reco-card {
+  border-radius: 20px 20px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5%;
+  max-height: 200px;
+  min-height: 200px;
+  min-width: 49%;
+  overflow: hidden;
+  position: relative;
+}
+
+.reco-card .recipe-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.reco-card span {
+  background-image: linear-gradient(to bottom, transparent, var(--five));
+  bottom: 0;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: -2px;
+  overflow: hidden;
+  padding: 2em 10px 10px;
+  position: absolute;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+
+@media screen and ( max-width : 500px ) {
+
+  .dtl-img {
+    border-radius: 50%;
+    margin: 1% 27.5%;
+    object-fit: cover;
+    width: 45%;
+  }
+
+  .details-page {
+    height: 100%;
+    padding-bottom: 5px;
+    padding-top: 2px;
+  }
+
+  .recipe-info {
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    margin: 1% auto 0;
+    padding: 2%;
+    width: 97.5%;
+  }
+
+  .recipe-info ul {
+    margin-top: 5%;
+  }
+
+  .recipe-info h2, .recipe-info h4 {
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  .recipe-info hr {
+    background-color: gainsboro;
+    color: gainsboro;
+    height: 1px;
+    margin: 0.3em auto 0.2em;
+    width: 90%;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .btn-container button {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .btn-container button:focus {
+    outline: none;
+  }
+
+  .btn-container img {
+    filter: invert(69%)
+      sepia(31%) saturate(4482%) hue-rotate(343deg) brightness(102%) contrast(94%);
+    max-width: 1.75em;
+    min-width: 1.75em;
+  }
+
+  .btn-container button:nth-child( 1 ) img {
+    filter: invert(13%)
+      sepia(8%) saturate(2444%) hue-rotate(154deg) brightness(96%) contrast(86%);
+  }
+
+  .btn-container button:nth-child( 1 ) {
+    color: var(--five);
+    font-weight: 600;
+  }
+
+  .meal-video {
+    border-radius: 3px;
+    margin: 0.4em 5% 0;
+    width: 90%;
+  }
+
+  .btn-start-recp, .btn-end-recp {
+    background-color: var(--five);
+    border-radius: 5px 5px 0 0;
+    bottom: 0;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+  }
+
+  .btn-start-recp:focus, .btn-end-recp:focus {
+    outline: none;
+  }
+
+}
