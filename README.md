@@ -8,6 +8,6 @@ The goal of this project was developing a recipes app by using the TheMealDB and
 ---
 
 Made together with the help of:
-@rubiaemilly29
-@LeoLacana
-@LeandroLopes1
+*@rubiaemilly29
+*@LeoLacana
+*@LeandroLopes1
